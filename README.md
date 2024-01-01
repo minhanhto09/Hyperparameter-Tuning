@@ -63,6 +63,8 @@ For your convenience and comparison, the optimal hyperparameters found by each t
   
 This Shiny application serves as a tool for data scientists and machine learning practitioners, enabling them to experiment with different hyperparameter tuning methods and make informed decisions about which approach is most suitable for their specific datasets and tasks. It promotes efficient model optimization and enhances predictive performance by automating the hyperparameter tuning process and visualizing its progress.
 
+![AppImage](https://github.com/minhanhto09/Hyperparameter-Tuning/blob/main/Image1)
+
 ## Detailed Methodology
 
 ### 1. Overview and Purpose
