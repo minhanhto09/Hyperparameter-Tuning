@@ -97,11 +97,11 @@ In this section, we introduce a Shiny application designed for comparing and eva
 
 In this section, we discuss the rationale behind the code implementation for the Shiny app.
 
-#### 1. tune_model Function:
+1. tune_model Function:
 
 We first started with defining the function `tune_model` in a separate R file. The `tune_model` function is a versatile function that automates the process of hyperparameter tuning and model evaluation for machine learning tasks. It takes several crucial inputs, including the dataset, target outcome variable, machine learning algorithm, task type, metric function, and the type of hyperparameter tuning method (Grid Search, Random Search, or Bayesian Optimization). This function first prepares the dataset by creating a model formula and splitting it into training and testing sets. It also sets up k-fold cross-validation for robust model evaluation. Depending on the selected algorithm and task type, the function configures an appropriate machine learning model and defines a workflow that includes preprocessing steps. It then conducts hyperparameter tuning using either grid search, random search or Bayesian optimization, fine-tuning model hyperparameters to optimize the chosen evaluation metric. Finally, it returns valuable outputs, including performance estimates over the tuning process and the best hyperparameters discovered for the specified machine learning algorithm and task. This function significantly modularizes and streamlines the hyperparameter tuning and model selection process, making it an essential tool for efficient model development and optimization.
 
-#### 2. User Interface: 
+2. User Interface: 
 
 The user interface (UI) includes a sidebar layout that allows users to set all require inputs in one section. First, the user can choose whether to use the example dataset provided or upload their own CSV/text file, in which case they are prompted to select the file location (and other settings) before uploading. They can then select whether to use a subset of the total observations, as well as the model type, task, outcome variable, and metric. These inputs are dynamic; that is, the choice of model type affects the task options, and the choice of task affects the options for outcome variable and metric.
 
@@ -110,7 +110,7 @@ Collapsible panel layout sections allow users to set the inputs required to defi
 The main panel compares and visualizes the performance of three hyperparameter tuning methods: Grid Search, Random Search, and Bayesian Optimization. The plot displaying the metric scores by
 elapsed time is implemented with Plotly to allow for the user to zoom, pan, and otherwise interact with the plot.
 
-#### 3. Server Logic:
+3. Server Logic:
 
 The server function begins by initializing a list of reactive values, `v`, which is crucial for storing and managing the state within the app. The default `Shuttle` dataset is added to that
 list and overwritten if the user uploads their own data. When the user clicks the "Upload" button, the app reads the uploaded file using `read.csv` and updates the `v$data` reactive value with the new data.
