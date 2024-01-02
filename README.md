@@ -1,7 +1,5 @@
 # Hyperparameter Tuning
 
-This Shiny app allows users to quickly compare the efficacy of three common hyperparameter tuning methods: Grid Search, Random Search, and Bayesian Optimization.
-
 ## Quick Start
 
 This Shiny app allows users to quickly compare the efficacy of three common hyperparameter tuning methods: Grid Search, Random Search, and Bayesian Optimization. This section describes the basic information you need to get started.
@@ -59,9 +57,9 @@ To launch the R Shiny app, start a local or cloud-based instance of RStudio and 
 
 3. Optimal Hyperparameters:
 
-For your convenience and comparison, the optimal hyperparameters found by each tuning method (Grid Search, Random Search, Bayesian Optimization) are displayed in separate sections within the application. This allows you to quickly assess and utilize the best hyperparameters for your machine learning model.
+   For your convenience and comparison, the optimal hyperparameters found by each tuning method (Grid Search, Random Search, Bayesian Optimization) are displayed in separate sections within the application. This allows you to quickly assess and utilize the best hyperparameters for your machine learning model.
   
-This Shiny application serves as a tool for data scientists and machine learning practitioners, enabling them to experiment with different hyperparameter tuning methods and make informed decisions about which approach is most suitable for their specific datasets and tasks. It promotes efficient model optimization and enhances predictive performance by automating the hyperparameter tuning process and visualizing its progress.
+   This Shiny application serves as a tool for data scientists and machine learning practitioners, enabling them to experiment with different hyperparameter tuning methods and make informed decisions about which approach is most suitable for their specific datasets and tasks. It promotes efficient model optimization and enhances predictive performance by automating the hyperparameter tuning process and visualizing its progress.
 
 ![AppImage](https://github.com/minhanhto09/Hyperparameter-Tuning/blob/main/Image1)
 
